@@ -1,0 +1,35 @@
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --background_color: #171717;
+  --elements_background_color: #27ae60;
+  --elements_color: #fff;
+  --main-text-color: #fff;
+  --secondary-text-color: #4f4f4f;
+  --nav-text-color: #fff;
+  --learn-more-button-text-color: white;
+  --portfolio-cards-bg-color: #4f4f4f;
+  --about-image-bg-circle: #212121;
+  --portfolio-li-more-title-text: #132238;
+  --portfolio-li-more-description-text: #556070;
+  --portfolio-li-more-button: white;
+  --contacts-form-label-text-bg: #171717;
+  --contacts-form-label-border: white;
+}
+
+:root[data-theme="dark"] {
+  --font-family: "DM Sans", sans-serif;
+  --background_color: white;
+  --elements_background_color: #27ae60;
+  --elements_color: #4f4f4f;
+  --main-text-color: #4f4f4f;
+  --secondary-text-color: white;
+  --nav-text-color: #fff;
+  --learn-more-button-text-color: black;
+  --portfolio-cards-bg-color: rgb(170, 170, 170);
+  --about-image-bg-circle: rgb(221, 221, 221);
+  --portfolio-li-more-title-text: rgb(212, 212, 212);
+  --portfolio-li-more-description-text: #d4d4d4;
+  --more-button-text: white;
+  --contacts-form-label-text-bg: white;
+  --contacts-form-label-border: black;
+}

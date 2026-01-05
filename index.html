@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="logo main-link">LOGO</a>
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link main-link">About</a></li>
+            <li>
+              <a href="#portfolio" class="nav-link main-link">Portfolio</a>
+            </li>
+            <li><a href="#contacts" class="nav-link main-link">Contacts</a></li>
+            <input type="checkbox" id="theme-toggle" class="checkbox" />
+            <label class="theme-toggler" for="theme-toggle">
+              <img
+                src="assets/icons/sun.svg"
+                alt="Light mode"
+                class="icon sun"
+              />
+              <img
+                src="assets/icons/moon.svg"
+                alt="Dark mode"
+                class="icon moon"
+              />
+            </label>
+            <script>
+              const toggle = document.getElementById("theme-toggle");
+
+              toggle.addEventListener("change", () => {
+                if (toggle.checked) {
+                  document.documentElement.setAttribute("data-theme", "dark");
+                } else {
+                  document.documentElement.removeAttribute("data-theme");
+                }
+              });
+            </script>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-text-wrapper">
+              <h1 class="hero-speciality">PYTHON DEVELOPER</h1>
+              <h2 class="hero-name_surname">Mike Hawk</h2>
+              <p class="hero-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                at, iusto illo quo aut libero a fuga unde voluptates maiores
+                nulla consectetur labore possimus nisi cumque hic dolores
+                provident officia?
+              </p>
+              <ul class="hyperlink_buttons">
+                <li>
+                  <a
+                    download=""
+                    href=""
+                    class="hyperlink_text download_cv_button"
+                    >Download CV</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hyperlink_text learn_more_button"
+                    >Learn More</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="hero-photo-wrapper">
+              <img
+                src="assets/images/photo.jpg"
+                width="500"
+                height="500"
+                alt="self-photo"
+                class="photo"
+              />
+              <p class="hero-open-to-work">
+                <span class="hero-open-to-work-text">#open_to_work 👨‍💻</span>
+              </p>
+              <div class="hero-online"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about-title text-centerize">ABOUT</h2>
+          <p class="about-description text-centerize">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+            dolores reiciendis aspernatur odit autem, dolore temporibus et
+            optio!
+          </p>
+
+          <div class="about-more">
+            <img
+              src="assets/images/workspace.jpg"
+              alt="workspace"
+              class="about-more-photo"
+            />
+            <div class="about-more-text">
+              <p class="about-more-text-title about-more-text-main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                architecto, tempore aspernatur animi esse omnis dolorem corrupti
+                quis in minima culpa, iure blanditiis reiciendis dolorum vitae
+                ipsam, delectus ea! Deserunt! Molestiae, nihil unde. Iste error
+                officiis, qui dolorem eum nostrum nisi?
+              </p>
+              <p class="about-more-text-title-second about-more-text-main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                architecto, tempore aspernatur animi esse omnis dolorem corrupti
+                quis in minima culpa, iure blanditiis reiciendis dolorum vitae
+                ipsam, delectus ea! Deserunt! Molestiae, nihil unde. Iste error
+                officiis, qui dolorem eum nostrum nisi?
+              </p>
+              <div class="about-more-button">
+                <a href="#" class="about-more-button-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="about-list">
+            <li class="about-list-centerize">
+              <div class="image-circle">
+                <img
+                  src="assets/icons/html.svg"
+                  alt="HTML"
+                  width="72"
+                  height="72"
+                />
+              </div>
+              <h3 class="about-list-title about-list-text-main">HTML</h3>
+              <p class="about-list-text about-list-text-main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="about-list-centerize">
+              <div class="image-circle">
+                <img
+                  src="assets/icons/css.svg"
+                  alt="CSS"
+                  width="72"
+                  height="72"
+                />
+              </div>
+              <h3 class="about-list-title about-list-text-main">CSS</h3>
+              <p class="about-list-text about-list-text-main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="about-list-centerize">
+              <div class="image-circle">
+                <img
+                  src="assets/icons/sass.svg"
+                  alt="SASS"
+                  width="72"
+                  height="72"
+                />
+              </div>
+              <h3 class="about-list-title about-list-text-main">SASS</h3>
+              <p class="about-list-text about-list-text-main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="about-list-centerize">
+              <div class="image-circle">
+                <img
+                  src="assets/icons/python.svg"
+                  alt="Python"
+                  width="72"
+                  height="72"
+                />
+              </div>
+              <h3 class="about-list-title about-list-text-main">Python</h3>
+              <p class="about-list-text about-list-text-main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="portfolio-text-wrapper">
+            <h2 class="portfolio-title portfolio-text-main">MY PORTFOLIO</h2>
+            <p class="portfolio-text portfolio-text-main">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+              dolores reiciendis aspernatur odit autem, dolore temporibus et
+              optio!
+            </p>
+          </div>
+          <ul class="portfolio-ul">
+            <li class="portfolio-li">
+              <div class="portfolio-li-wrapper">
+                <img
+                  src="./assets/images/code.jpg"
+                  alt="code"
+                  class="portfolio-image"
+                />
+                <div class="portfolio-li-more-button">
+                  <a href="#" class="portfolio-li-more-button-text"
+                    >Live page</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio-li-more-wrapper">
+                <div class="portfolio-li-more">
+                  <h3 class="portfolio-li-more-title">
+                    Product Admin Dashboard
+                  </h3>
+                  <p class="portfolio-li-more-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate qui repellendus incidunt aut excepturi saepe odit
+                    dolorum, eius tenetur, eum, consectetur minima?
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio-li">
+              <div class="portfolio-li-wrapper">
+                <img
+                  src="./assets/images/table.jpg"
+                  alt="code"
+                  class="portfolio-image"
+                />
+                <div class="portfolio-li-more-button">
+                  <a href="#" class="portfolio-li-more-button-text"
+                    >Live page</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio-li-more-wrapper">
+                <div class="portfolio-li-more">
+                  <h4 class="portfolio-li-more-title">Website Store</h4>
+                  <p class="portfolio-li-more-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate qui repellendus incidunt aut excepturi saepe odit
+                    dolorum, eius tenetur, eum, consectetur minima?
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio-li">
+              <div class="portfolio-li-wrapper">
+                <img
+                  src="./assets/images/board.jpg"
+                  alt="code"
+                  class="portfolio-image"
+                />
+                <div class="portfolio-li-more-button">
+                  <a href="#" class="portfolio-li-more-button-text"
+                    >Live page</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio-li-more-wrapper">
+                <div class="portfolio-li-more">
+                  <h4 class="portfolio-li-more-title">Modern App with AI</h4>
+                  <p class="portfolio-li-more-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate qui repellendus incidunt aut excepturi saepe odit
+                    dolorum, eius tenetur, eum, consectetur minima?
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts-wrapper">
+            <div class="contacts-wrapper-text">
+              <h2 class="contacts-title contacts-text-main">CONTACTS</h2>
+              <p class="contacts-text contacts-text-main">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                dolores reiciendis aspernatur odit autem!
+              </p>
+            </div>
+            <div class="contacts-wrapper-more">
+              <div class="contacts-ul-wrapper">
+                <ul class="contacts-ul">
+                  <li class="contacts-li">
+                    <img
+                      src="./assets/icons/phone.svg"
+                      height="24"
+                      width="24"
+                      alt="phone"
+                      class="contacts-list-image"
+                    />
+                    <a
+                      href="tel:+0671234567"
+                      class="contacts-list-text contacts-text-main contacts-list-link"
+                    >
+                      064 213 45 78
+                    </a>
+                  </li>
+                  <li class="contacts-li contacts-li-first">
+                    <img
+                      src="./assets/icons/mail.svg"
+                      height="24"
+                      width="18"
+                      alt="mail"
+                      class="contacts-list-image"
+                    />
+                    <a
+                      href="mailto:garfield@gmail.com"
+                      class="contacts-list-text contacts-text-main contacts-list-link"
+                    >
+                      garfield@gmail.com
+                    </a>
+                  </li>
+                  <li class="contacts-li contacts-li-second">
+                    <img
+                      src="./assets/icons/map.svg"
+                      height="24"
+                      width="22"
+                      alt="map"
+                      class="contacts-list-image"
+                    />
+                    <p class="contacts-list-text contacts-text-main">
+                      Germany, Berlin
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <form class="contacts-form">
+                <div class="contacts-form-name">
+                  <div class="contacts-form-wrapper">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="contacts-form-input"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="name" class="contacts-form-label">Name</label>
+                  </div>
+                  <div class="contacts-form-wrapper">
+                    <input
+                      type="text"
+                      name="last_name"
+                      id="last_name"
+                      class="contacts-form-input"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="last_name" class="contacts-form-label"
+                      >Last name</label
+                    >
+                  </div>
+                </div>
+                <div class="contacts-form-details">
+                  <div class="contacts-form-wrapper">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="contacts-form-input"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="email" class="contacts-form-label">Email</label>
+                  </div>
+                  <div class="contacts-form-wrapper">
+                    <input
+                      type="tel"
+                      name="phone_number"
+                      id="phone_number"
+                      class="contacts-form-input"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="phone_number" class="contacts-form-label"
+                      >Phone number</label
+                    >
+                  </div>
+                </div>
+                <div class="contacts-form-message">
+                  <div class="contacts-form-wrapper">
+                    <textarea
+                      class="contacts-message"
+                      name="message"
+                      id="message"
+                      placeholder=" "
+                      required
+                      minlength="10"
+                      maxlength="200"
+                    ></textarea>
+                    <label
+                      for="message"
+                      class="contacts-form-label contacts-form-message-label"
+                      >Message</label
+                    >
+                  </div>
+                </div>
+                <div class="contacts-form-submit">
+                  <input
+                    class="contacts-submit"
+                    type="submit"
+                    value="Submit Now"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a href="#" class="footer-link"
+                ><img
+                  src="./assets/icons/github.svg"
+                  width="24"
+                  height="24"
+                  alt="github"
+              /></a>
+            </li>
+            <li class="footer-li">
+              <a href="#" class="footer-link"
+                ><img
+                  src="./assets/icons/telegram.svg"
+                  width="24"
+                  height="24"
+                  alt="telegram"
+              /></a>
+            </li>
+            <li class="footer-li">
+              <a href="#" class="footer-link"
+                ><img
+                  src="./assets/icons/facebook.svg"
+                  width="24"
+                  height="24"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li class="footer-li">
+              <a href="#" class="footer-link"
+                ><img
+                  src="./assets/icons/instagram.svg"
+                  width="24"
+                  height="24"
+                  alt="instagram"
+              /></a>
+            </li>
+          </ul>
+          <p class="footer-copyright-mark">&copy; 2026 COMPANY NAME</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

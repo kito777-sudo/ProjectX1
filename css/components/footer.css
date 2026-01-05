@@ -1,0 +1,44 @@
+@import url("../utils/variables.css");
+
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-ul {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--elements_background_color);
+  border-radius: 50%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.footer-copyright-mark {
+  height: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--main-text-color);
+}
+
+.footer-link:hover {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.644);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
